@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb+srv://techteam:1234567890@cluster0.13yxblj.mongodb.net/test
+    depends_on:
+      - db
+  db:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=tech_team
+      - MONGO_INITDB_ROOT_PASSWORD=1234567890

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="map" style="height: 100vh; width: 100vw;"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_key }}&callback=initMap" async defer></script>
+<script type="text/javascript">
+    var markers = [
+    {
+        "title": 'Kruger National Park',
+        "lat": '-23.988385',
+        "lng": '31.554740',
+        "description": 'Kruger National Park is one of the largest game reserves in Africa, covering an area of over 19,000 square kilometers in the northeastern part of South Africa.'
+        },
+        {
+        "title": 'Table Mountain',
+        "lat": '-33.962822',
+        "lng": '18.409841',
+        "description": 'Table Mountain is a flat-topped mountain forming a prominent landmark overlooking the city of Cape Town in South Africa.'
+        },
+        {
+        "title": 'Victoria Falls',
+        "lat": '-17.924444',
+        "lng": '25.857497',
+        "description": 'Victoria Falls is a waterfall located on the Zambezi River at the border between Zambia and Zimbabwe in southern Africa.'
+        },
+        {
+        "title": 'Okavango Delta',
+        "lat": '-19.333333',
+        "lng": '22.833333',
+        "description": 'The Okavango Delta is a large inland river delta in Botswana, southern Africa. It is one of the Seven Natural Wonders of Africa and is known for its diverse wildlife and ecosystems.'
+        },
+        {
+        "title": 'Cape of Good Hope',
+        "lat": '-34.356842',
+        "lng": '18.473988',
+        "description": 'The Cape of Good Hope is a rocky headland on the Atlantic coast of the Cape Peninsula in South Africa. It is a popular tourist attraction and marks the southwesternmost point of the African continent.'
+        }
+        ];
+    window.onload = function () {
+        LoadMap();
+    }
+    function LoadMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+            zoom: 5,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        //Create and open InfoWindow.
+        var infoWindow = new google.maps.InfoWindow();
+
+        for (var i = 0; i < markers.length; i++) {
+            var data = markers[i];
+            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: data.title
+            });
+
+            //Attach click event to the marker.
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                    infoWindow.open(map, marker);
+                });
+            })(marker, data);
+        }
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="map" style="height: 100vh; width: 100vw;"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_key }}&callback=initMap" async defer></script>
+
+<script type="text/javascript">
+    var markers = {{ markers|safe }};
+    window.onload = function () {
+        LoadMap();
+    }
+
+    
+    function LoadMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+            zoom: 3,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        //Create and open InfoWindow.
+        var infoWindow = new google.maps.InfoWindow();
+
+        for (var i = 0; i < markers.length; i++) {
+            var data = markers[i];
+            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: data.title
+            });
+
+            //Attach click event to the marker.
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                    infoWindow.setContent('<div id="content">' +
+                        
+                        '<h3>' + data.title + '</h3>' +
+                        '<div><strong>Username:</strong> ' + data.username + '</div>' +
+                        '<div><strong>Date of birth:</strong> ' + data.date_of_birth + '</div>' +
+                        '<div><strong>Phone number:</strong> ' + data.phone_number + '</div>' +
+                        '<div><strong>Home address:</strong> ' + data.description + '</div>' +
+                        '<div><strong>Location:</strong> ' + data.lat +' , '+ data.lng +'</div>' +
+                        '<div><img src="' + data.profile_picture + '" width="100"></div>' +
+                                        
+                        
+                    "</div>");
+                    infoWindow.open(map, marker);
+                });
+            })(marker, data);
+        }
+    }
+</script>
+{% endblock %}

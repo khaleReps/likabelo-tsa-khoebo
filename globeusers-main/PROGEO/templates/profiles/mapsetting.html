@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% comment %} 
+var mapOptions = {
+    center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+    zoom: 5,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}; {% endcomment %}
+
+{% block content %}
+<div class="container col-12 p-5">
+  <h1><span class="text-capitalize">Map Settings</h1>
+  <br>
+  <form method="post"  action="{% url 'map' %}">
+    {% csrf_token %}
+    {% for marker in markers %}
+      <input type="number" name="marker{{ marker.id }}_title" value="{{ marker.title }}">
+      <input type="number" name="marker{{ marker.id }}_lat" value="{{ marker.lat }}">
+      <input type="number" name="marker{{ marker.id }}_lng" value="{{ marker.lng }}">
+      <input type="number" name="marker{{ marker.id }}_description" value="{{ marker.description }}">
+    {% endfor %}
+
+   <div class="mb-3">
+      <label for="latitude" class="form-label"><strong>Latitude:</strong></label>
+      <input type="number" name="latitude" class="form-control" id="latitude" value="{{ mapOptions.center.lat }}">
+    </div>
+
+    <div class="mb-3">
+      <label for="longitude" class="form-label"><strong>Longitude:</strong></label>
+      <input type="number" name="longitude" class="form-control" id="longitude" value="{{ mapOptions.center.lng }}">
+    </div>
+
+    <div class="mb-3">
+      <label for="zoom" class="form-label"><strong>Zoom:</strong></label>
+      <input type="number" name="zoom" class="form-control" id="zoom" value="{{ mapOptions.zoom }}">
+    </div>
+
+    <div class="mb-3">
+      <label for="mapType" class="form-label"><strong>Map Type:</strong></label>
+      <select name="mapType" class="form-control" id="mapType">
+        <option value="roadmap" {% if mapOptions.mapTypeId == 'roadmap' %}selected{% endif %}>Roadmap</option>
+        <option value="satellite" {% if mapOptions.mapTypeId == 'satellite' %}selected{% endif %}>Satellite</option>
+        <option value="hybrid" {% if mapOptions.mapTypeId == 'hybrid' %}selected{% endif %}>Hybrid</option>
+        <option value="terrain" {% if mapOptions.mapTypeId == 'terrain' %}selected{% endif %}>Terrain</option>
+      </select>
+    </div>
+    
+    <div class="mb-3">
+      <button type="submit" class="btn btn-success">Save</button>
+      <a href="{% url 'map' %}" class="btn btn-primary">Back to Map</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+{% comment %} <div class="container col-12 p-5">
+  <h1>Register</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-priam" type="submit">Register</button>
+  </form>
+</div> {% endcomment %}
+
+<div class="container col-12 p-5">
+  <h1>Register</h1>
+  <form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="mb-3">
+      <label for="{{ field.id_for_label }}"><strong>{{ field.label }}</strong></label>
+      {% render_field field class="form-control" placeholder=field.label %}
+    </div>
+    {% endfor %}
+    <button class="btn btn-success" type="submit">Register</button>
+    <a class="btn btn-dark" href="{% url 'admin_profile' %}">Return to Home</a>
+  </form>
+</div>
+{% endblock %}

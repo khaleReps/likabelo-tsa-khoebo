@@ -1,0 +1,30 @@
+# geoprofile
+geoprofile
+
+
+ # Admin
+ username : wheel
+ password : Wheelwith8Rings
+
+# GOOGLEMAPS
+rename credentials.py to credential.py
+add your google_api_key and as well as secrete_key
+
+
+#Packages
+asgiref==3.6.0
+certifi==2023.5.7
+charset-normalizer==3.1.0
+Django==4.2.1
+django-google-maps==0.13.0
+django-map-widgets==0.4.1
+django-widget-tweaks==1.4.12
+Faker==18.7.0
+googlemaps==4.10.0
+idna==3.4
+python-dateutil==2.8.2
+requests==2.30.0
+six==1.16.0
+sqlparse==0.4.4
+tzdata==2023.3
+urllib3==2.0.2

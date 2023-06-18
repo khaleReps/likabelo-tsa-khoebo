@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>User Profile</h1>
+  <p><strong>Username:</strong> {{ user.username }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Home Address:</strong> {{ user.home_address }}</p>
+  <p><strong>Phone Number:</strong> {{ user.phone_number }}</p>
+  <p><strong>Address:</strong> {{ user.address }}</p>
+  <p><strong>Location:</strong> {{ user.location }}</p>
+{% endblock %}

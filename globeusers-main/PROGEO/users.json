@@ -1,0 +1,154 @@
+[
+    {   
+        "user": "Gorrge Wallymamaoth",
+        "profile_picture": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fprofile_3176151&psig=AOvVaw3pmtdZMJedb9YT0I8vt7xp&ust=1683807069678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMCisajc6v4CFQAAAAAdAAAAABAa",
+        "date_of_birth": "1732-02-22",
+        "phone_number": "1234567890",
+        "home_address": "Mall of America",
+        "location": "44.8549, 93.2422"
+    },
+    {
+        "user": "Abraham Stevevo",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_a7hvkAi-RUVvg6j58cOBwyiL_52fF4Np3eJ90g1NbeYKHLpnGJxk7ngegcAnllATFyk&usqp=CAU",
+        "date_of_birth": "1809-02-12",
+        "phone_number": "2345678901",
+        "home_address": "West Edmonton Mall",
+        "location": "53.5225, 113.6242"
+    },
+    {
+        "user": "Thomas Jackson",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHoidJQLVyoP-8-S47AwWMxU9p5y6CuVsZ1kTjyhLOQSmFj-fTpjx6nujQYyuRy4hnBh8&usqp=CAU",
+        "date_of_birth": "1743-04-13",
+        "phone_number": "3456789012",
+        "home_address": "Dubai Mall",
+        "location": "25.1972, 55.2797"
+    },
+    {
+        "user": "Theodore Raddude",
+        "profile_picture": "https://cdn-icons-png.flaticon.com/512/3981/3981316.png",
+        "date_of_birth": "1858-10-27",
+        "phone_number": "4567890123",
+        "home_address": "Mall of the Emirates",
+        "location": "25.1181, 55.2006"
+    },
+    {
+        "user": "Franklin Toptsont",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc8PS-Jb8bAhTkzz0lZ6lR_uULRe2zTQRElg9EZTFx81SDmrM_0TyULHiUUvxaoiXeK4Y&usqp=CAU",
+        "date_of_birth": "1882-01-30",
+        "phone_number": "5678901234",
+        "home_address": "King of Prussia Mall",
+        "location": "40.0885, 75.3904"
+    },
+    {
+        "user": "Harry TheWhooo",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9-se1D9SqhrfSVLQDBTyDCfc3UGttgUkj3l3rsw7Yunyxn8xVQb4cORc6TG3UCP9qxII&usqp=CAU",
+        "date_of_birth": "1884-05-08",
+        "phone_number": "6789012345",
+        "home_address": "Mall of Africa",
+        "location": "26.0140, 28.1073"
+    },
+    {
+        "user": "Dwight Erkle",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctsb_AoB35dADTvZ0-znoRHHzI0OP_5kOmOsTrDfOPcUvS0CC9UaU988FKUGm-Slf4BY&usqp=CAU",
+        "date_of_birth": "1890-10-14",
+        "phone_number": "7890123456",
+        "home_address": "Istanbul Cevahir",
+        "location": "41.0631, 28.9925"
+    },
+    {
+        "user": "Johnny Bboy",
+        "profile_picture": "https://cdn-icons-png.flaticon.com/512/2922/2922529.png",
+        "date_of_birth": "1917-05-29",
+        "phone_number": "8901234567",
+        "home_address": "SM Megamall",
+        "location": "14.5859, 121.0565"
+    },
+    {
+        "user": "Lyndon Skryden",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcMPnY4TusCNAr-D3tz_LPmSOKyQ4Oai679JMfxKiuJPqZJm28eqi-5qu4nai2vi9nMz8&usqp=CAU",
+        "date_of_birth": "1908-08-27",
+        "phone_number": "9012345678",
+        "home_address": "CentralWorld",
+        "location": "13.7465, 100.5391"
+    },
+    {
+        "user": "Richard Shiftskins",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPFG1AcJy_c862d-a9NNXb4_COSoJVlX6QyS-H52enk48tS3PjvCD0tT-hTIwcFyruDvM&usqp=CAU",
+        "date_of_birth": "1913-01-09",
+        "phone_number": "0123456789",
+        "home_address": "CentralPlaza WestGate",
+        "location": "13.8771, 100.4113"
+    },
+    {
+        "user": "Gerald Ford",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSunyjGiacjfWCF3Z4xqgRxk44ts3YpExypn4vzinpsszknF8xAz-eiJu90oJovoV8wphI&usqp=CAU",
+        "date_of_birth": "1913-07-14",
+        "phone_number": "1111111111",
+        "home_address": "Berjaya Times Square",
+        "location": "3.1422, 101.7106"
+    },
+    {
+        "user": "Jimmy Popeshrimp",
+        "profile_picture": "https://cdn-icons-png.flaticon.com/512/4061/4061233.png",
+        "date_of_birth": "1924-10-01",
+        "phone_number": "2222222222",
+        "home_address": "Mall Taman Anggrek",
+        "location": "6.1782, 106.7919"
+    },
+    {
+        "user": "Ronald Reagan",
+        "profile_picture": "https://cdn-icons-png.flaticon.com/512/1726/1726625.png",
+        "date_of_birth": "1911-02-06",
+        "phone_number": "3333333333",
+        "home_address": "The Avenues",
+        "location": "29.3031, 47.9370"
+    },
+    {
+        "user": "George ToomanGeorge",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7GzRc8vlC1lhRMz10K4GmBGXrwHTp8fMRxlfMzJmMrPEIV5hREKdz7IZFbbYcWO1tZ94&usqp=CAU",
+        "date_of_birth": "1924-06-12",
+        "phone_number": "4444444444",
+        "home_address": "VivoCity",
+        "location": "1.2649, 103.8221"
+    },
+    {
+        "user": "Bill GSmoo",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSmV2MJA6OkIniTccN1wYtggk_w7KJlMUxGBo-_MKjFff7tykVJUVCec6sTCe5sEIrdQ&usqp=CAU",
+        "date_of_birth": "1946-08-19",
+        "phone_number": "5555555555",
+        "home_address": "Siam Paragon",
+        "location": "13.7462, 100.5347"
+    },
+    {
+        "user": "GeorgeIII29",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwI2ojaBtLE3CUfbxNUbHNTyF9NYUJ11UOu9D1dR7ZttCOlElNXyLvqTYxDuqHjmBj9LE&usqp=CAU",
+        "date_of_birth": "1946-07-06",
+        "phone_number": "6666666666",
+        "home_address": "Eastgate Shopping Centre",
+        "location": "26.1804, 28.1172"
+    },
+    {
+        "user": "Bozma Beezey",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm_6M3vo3AAqu9f-0RSqxClV3oJm7sLbKBl2J2NciGwZxPDSLlkCIar1f7HrLE92URfOs&usqp=CAU",
+        "date_of_birth": "1961-08-04",
+        "phone_number": "7777777777",
+        "home_address": "Queensbay Mall",
+        "location": "5.3332, 100.306613.7463, 100.5327"
+    },
+    {
+        "user": "Dan Trumounp",
+        "profile_picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5NtcA-G0Thf6l9yIcvn2eMXWFopZFAfxTIT_cBbKMSSCSybUSavMPI-vFUsR2-lHHPI&usqp=CAU",
+        "date_of_birth": "1946-06-14",
+        "phone_number": "8888888888",
+        "home_address": "Siam Center",
+        "location": "34.0719, 118.3575"
+    },
+    {
+        "user": "Joeyy_Bridgymalon",
+        "profile_picture": "https://cdn-icons-png.flaticon.com/512/2829/2829811.png",
+        "date_of_birth": "1942-11-20",
+        "phone_number": "9999999999",
+        "home_address": "The Grove",
+        "location": "33.9066, 18.4193"
+    }
+]

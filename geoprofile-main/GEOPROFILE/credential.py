@@ -1,0 +1,2 @@
+CRED_SECRET_KEY = ''
+CRED_GOOGLE_MAPS  = ''

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% block content %}
+
+<div class="container col-12 p-5">
+    <h1>Edit Profile</h1>
+    <br>
+    <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% comment %} {{ form.as_p }} {% endcomment %}
+    <div class="col-12 row">       
+        <div class="col-6">
+
+            {% for field in form %}
+                <div class="mb-3">
+                    <label for="{{ field.id_for_label }}" class="form-label"><strong>{{ field.label }}:</strong></label>
+                    {% render_field field class+="form-control" %}
+                </div>
+            {% endfor %}
+                
+        </div>
+        <div class="col-6">
+            <img  class="img-thumbnail" src={{ form.profile_picture.value }} alt="profile picture of ">
+        </div>
+    </div>
+    <br>
+    <div class="mb-3">
+        <a class="btn btn-dark" href="{% url 'profile' %}">Return to Profile</a>
+        <button class="btn btn-success" type="submit">Save Changes</button>
+    </div>
+</form>
+</div>
+
+    
+   
+
+
+{% endblock %}

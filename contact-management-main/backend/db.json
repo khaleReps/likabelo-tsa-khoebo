@@ -1,0 +1,98 @@
+[
+    {
+        "id": "T-1001",
+        "name": "Glenda Kim",
+        "company": "Friend",
+        "email": "glenda@gmail.com",
+        "title": "freelancer",
+        "mobile": "8880009991",
+        "photo": "https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png",
+        "createdAt": "2023-04-27T11:43:50.000Z",
+        "updatedAt": "2023-04-27T11:43:50.000Z",
+        "group_id": 1
+    },
+    {
+        "id": "T-1002",
+        "name": "Vladeen Min",
+        "company": "Service",
+        "email": "vladeen@mail.com",
+        "title": "Electrician",
+        "mobile": "9876546787",
+        "photo": "https://png.pngtree.com/png-clipart/20190922/original/pngtree-business-male-user-avatar-vector-png-image_4774078.jpg",
+        "createdAt": "2023-04-27T11:43:50.000Z",
+        "updatedAt": "2023-04-27T11:43:50.000Z",
+        "group_id": 1
+    },
+    {
+        "id": "T-1003",
+        "name": "Karabo Luleka",
+        "company": "YouTube",
+        "email": "kb@mail.com",
+        "title": "Youtuber",
+        "mobile": "9876546787",
+        "photo": "https://cdn3.iconfinder.com/data/icons/avatars-flat/33/man_3-512.png",
+        "createdAt": "2023-04-27T11:43:50.000Z",
+        "updatedAt": "2023-04-27T11:43:50.000Z",
+        "group_id": 3
+    },
+    {
+        "id": "T-1004",
+        "name": "John Doe",
+        "company": "The Job",
+        "email": "john.doe@mail.com",
+        "title": "Tech Lead",
+        "mobile": "0987654345",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGALTmfo7QxJfCx1xhey1KaA8Tol38EkgyTg&usqp=CAU",
+        "createdAt": "2023-04-27T11:43:50.000Z",
+        "updatedAt": "2023-04-27T11:43:50.000Z",
+        "group_id": 6
+    },
+    {
+        "id": "T-1005",
+        "name": "Reabetswe Khang",
+        "company": "HCL Technologies",
+        "email": "rea@mail.com",
+        "title": "Software Engineer",
+        "mobile": "9090909090",
+        "photo": "https://png.pngtree.com/png-clipart/20201011/ourmid/pngtree-orange-fashion-black-woman-avatar-illustration-element-png-image_2352545.jpg",
+        "createdAt": "2023-04-27T11:43:50.000Z",
+        "updatedAt": "2023-04-27T11:43:50.000Z",
+        "group_id": 2
+    },
+    {
+        "id": "T-1006",
+        "name": "Thabs Doro",
+        "company": "Lion Co",
+        "email": "thasman@mail.com",
+        "title": "Full Stack Developer",
+        "mobile": "1198765434",
+        "photo": "https://cdn-icons-png.flaticon.com/512/3347/3347072.png",
+        "createdAt": "2023-04-27T11:43:50.000Z",
+        "updatedAt": "2023-04-27T11:43:50.000Z",
+        "group_id": 4
+    },
+    {
+        "id": "T-1007",
+        "name": "lbuhasi Homishia",
+        "company": "Ti121",
+        "email": "kst3121@mail.com",
+        "title": "MR",
+        "mobile": "9090909090",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGOZhjC-shJBsib1M4Jag94hyytXLAXaESZ1VsoIt9d7euVercOAZIioWUmt9dl4afAu0&usqp=CAU",
+        "createdAt": "0000-00-00 00:00:00",
+        "updatedAt": "0000-00-00 00:00:00",
+        "group_id": 2
+    },
+    {
+        "id": "T-1008",
+        "name": "Lee Matebela",
+        "company": "Companyx",
+        "email": "lee@mail.com",
+        "title": "Doctor",
+        "mobile": "1234567897",
+        "photo": "https://cdn-icons-png.flaticon.com/512/4202/4202844.png",
+        "createdAt": "0000-00-00 00:00:00",
+        "updatedAt": "0000-00-00 00:00:00",
+        "group_id": 2
+    }
+]

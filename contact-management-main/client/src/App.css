@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+body {
+    font-size: 22px;
+    color: black!important;
+    background-color: rgb(230, 248, 225)!important;
+
+    font-family: 'Poppins'!important;
+    /* font-family: 'Castoro Titling', cursive!important; */
+}
+
+
+/* h1 { font-family: 'Castoro Titling', cursive!important; }
+h2 { font-family: 'Castoro Titling', cursive!important; }
+h3 { font-family: 'Castoro Titling', cursive!important; }
+h4 { font-family: 'Castoro Titling', cursive!important; }
+h5 { font-family: 'Castoro Titling', cursive!important; }
+h6 { font-family: 'Castoro Titling', cursive!important; } */
+
+
+.contact-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

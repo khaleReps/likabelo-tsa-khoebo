@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% load static %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/admin_login.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container col-12 p-5">
+<meta name="theme-color" content="#712cf9">
+<main class="form-signin m-auto">
+    <div class="row">
+        <div class="col-6 bg-grey mx-auto">
+            <h1 class="h3 mb-3 fw-normal text-center fs-1">WELCOME, <br>SIGN IN TO CONTINUE</h1>
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
+                    <form method="post" action="{% url 'admin_login' %}">
+                        {% csrf_token %}
+                        <h2 class="text-center">Admin Login</h2>
+                        <div class="form-group text-center mb-3">
+                            <label for="{{ form.username.id_for_label }}" class="form-label">{{ form.username.label }}</label>
+                            {% render_field form.username class="form-control" %}
+                        </div>
+                        <div class="form-group text-center mb-3">
+                            <label for="{{ form.password.id_for_label }}" class="form-label">{{ form.password.label }}</label>
+                            {% render_field form.password class="form-control" %}
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                           
+                            <a class="btn btn-dark" href="{% url 'register' %}">Create Account</a>
+                            <a class="btn btn-secondary" href="{% url 'admin_login' %}">Admin</a>
+                        </div>
+                    </form>
+                </div>
+            </div> 
+        </div>
+    </div>
+</main>
+</div>
+{% endblock %}
